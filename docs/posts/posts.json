@@ -1,5 +1,39 @@
 [
   {
+    "path": "posts/2021-10-09-first/",
+    "title": "First",
+    "description": "First: A short description of the post.",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-10-09",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-10-09T16:32:57+01:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2021-10-09-second/",
+    "title": "Second",
+    "description": "Second:A short description of the post.",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-10-09",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-10-09T16:33:17+01:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/welcome/",
     "title": "Welcome to Blog Experiment",
     "description": "Welcome to our new blog, Blog Experiment. We hope you enjoy \nreading what we have to say!",
