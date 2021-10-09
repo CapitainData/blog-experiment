@@ -101,6 +101,10 @@ transform: translateY(-30%);
     position: relative;
 }
 
+.distill-search {
+  top:12%;
+  position: relative;
+}
 d-title{
   margin-top: 30px;
 }
