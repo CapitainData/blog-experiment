@@ -2215,11 +2215,28 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       position: relative;
   }
 
-  #distill-search {
+  .nav-search {
     position: relative;
     transform: translateY(-30%);
-    bottom: 20px;
+    bottom: 10px;
   }
+
+  /* Search bar */
+
+  .algolia-autocomplete {
+      display: inline-block;
+      margin-left: 10px;
+      vertical-align: sub;
+      background-color: #fffff8;
+      color: #03b3ff;             /* Color of text in drop-down*/
+      padding: 6px;
+      padding-top: 8px;
+      padding-bottom: 0;
+      border-radius: 6px;
+      border: 0px #03b3ff solid;  /* Removed border */
+      width: 180px;
+  }
+
   d-title{
     margin-top: 30px;
   }
@@ -2239,7 +2256,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
   body {
-      background-color: lightyellow;
+      background-color: white;
     }</style>
   <style type="text/css">
   /* base style */
