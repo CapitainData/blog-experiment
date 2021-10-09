@@ -1,7 +1,7 @@
 ---
-title: "Welcome to Blog Experiment"
+title: "Welcome to The Ultimate Learner"
 description: |
-  Welcome to our new blog, Blog Experiment. We hope you enjoy 
+  Welcome to our new blog, The Ultimate Learner. We hope you enjoy 
   reading what we have to say!
 author:
   - name: Nora Jones 

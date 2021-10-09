@@ -47,13 +47,13 @@
     "categories": [],
     "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-10-09T16:46:00+01:00",
+    "last_modified": "2021-10-09T17:21:08+01:00",
     "input_file": {}
   },
   {
     "path": "posts/welcome/",
-    "title": "Welcome to Blog Experiment",
-    "description": "Welcome to our new blog, Blog Experiment. We hope you enjoy \nreading what we have to say!",
+    "title": "Welcome to The Ultimate Learner",
+    "description": "Welcome to our new blog, The Ultimate Learner. We hope you enjoy \nreading what we have to say!",
     "author": [
       {
         "name": "Nora Jones",
@@ -64,7 +64,7 @@
     "categories": [],
     "contents": "\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-10-09T16:18:03+01:00",
+    "last_modified": "2021-10-09T18:14:24+01:00",
     "input_file": {}
   }
 ]
