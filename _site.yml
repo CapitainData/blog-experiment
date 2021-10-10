@@ -45,3 +45,5 @@ collections:
     creative_commons: CC BY-SA
     disqus: the-ultimate-learner
     share: [twitter, linkedin, facebook, google-plus, and pinterest]
+    feed_items_max: 5
+    

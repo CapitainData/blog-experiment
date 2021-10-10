@@ -107,7 +107,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","css","listing"]}},"value":[{"type":"character","attributes":{},"value":["The Ultimate Learner"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["styles.css"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output","site","css","listing"]}},"value":[{"type":"character","attributes":{},"value":["The Ultimate Learner"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","anchor_sections"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["before-i-sleep.css"]},{"type":"character","attributes":{},"value":["posts"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2421,9 +2421,165 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
+  <script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-23VKK0QF3E"></script>
+  <script type="text/javascript" cookie-consent="tracking">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-23VKK0QF3E');
+  </script>
+  <style type="text/css">
+
+  /* base variables */
+  @import url("pygment_highlights.css");
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
+  @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Condensed|Open+Sans|Open+Sans+Condensed:300|Open+Sans+Condensed:light|Lato|Lora|Fira+Sans|Fira+Mono");
+
+  /* Edit the CSS properties in this file to create a custom
+     Distill theme. Only edit values in the right column
+     for each row; values shown are the CSS defaults.
+     To return any property to the default,
+     you may set its value to: unset
+     All rows must end with a semi-colon.                      */
+
+  /* Optional: embed custom fonts here with `@import`          */
+  /* This must remain at the top of this file.                 */
+
+
+
+  html {
+    /*-- Main font sizes --*/
+    --title-size:      50px;
+    --body-size:       1.06rem;
+    --code-size:       14px;
+    --aside-size:      12px;
+    --fig-cap-size:    13px;
+    /*-- Main font colors --*/
+    --title-color:     #000000;
+    --header-color:    rgba(0, 0, 0, 0.8);
+    --body-color:      rgba(0, 0, 0, 0.8);
+    --aside-color:     rgba(0, 0, 0, 0.6);
+    --fig-cap-color:   rgba(0, 0, 0, 0.6);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    --heading-font:    sans-serif;
+    --mono-font:       monospace;
+    --body-font:       sans-serif;
+    --navbar-font:     sans-serif;  /* websites + blogs only */
+  }
+
+  /*-- ARTICLE METADATA --*/
+  d-byline {
+    --heading-size:    0.6rem;
+    --heading-color:   rgba(0, 0, 0, 0.5);
+    --body-size:       0.8rem;
+    --body-color:      rgba(0, 181, 204, 1);
+  }
+
+  /*-- ARTICLE TABLE OF CONTENTS --*/
+  .d-contents {
+    --heading-size:    18px;
+    --contents-size:   13px;
+  }
+
+  /*-- ARTICLE APPENDIX --*/
+  d-appendix {
+    --heading-size:    15px;
+    --heading-color:   rgba(0, 0, 0, 0.65);
+    --text-size:       0.8em;
+    --text-color:      rgba(0, 0, 0, 0.5);
+  }
+
+  /*-- WEBSITE HEADER + FOOTER --*/
+  /* These properties only apply to Distill sites and blogs  */
+
+  .distill-site-header {
+    --title-size:       18px;
+    --text-color:       lightblue;/*#000000;*/
+    --text-size:        15px;
+    --hover-color:      blue;
+    --bkgd-color:       #FFFFFF;
+  }
+
+  .distill-site-footer {
+    --text-color:       rgba(255, 255, 255, 0.8);
+    --text-size:        15px;
+    --hover-color:      white;
+    --bkgd-color:       #0F2E3D;
+  }
+
+  /*-- Additional custom styles --*/
+  /* Add any additional CSS rules below                      */
+
+  .distill-site-header .logo img {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      max-height: 60px;
+  }
+
+  .distill-site-header {
+      height: 60px;
+  }
+
+
+  .distill-site-header .title {
+    margin-top: 20px;
+    position: relative;
+    transform: translateY(-30%);
+  }
+
+  .distill-site-header .nav-right {
+      top: 12%;
+      position: relative;
+  }
+
+  .nav-search {
+    position: relative;
+    transform: translateY(-30%);
+    bottom: 10px;
+  }
+
+  /* Search bar */
+
+  .algolia-autocomplete {
+      display: inline-block;
+      margin-left: 10px;
+      vertical-align: sub;
+      background-color: #fffff8;
+      color: #03b3ff;             /* Color of text in drop-down*/
+      padding: 6px;
+      padding-top: 8px;
+      padding-bottom: 0;
+      border-radius: 6px;
+      border: 0px #03b3ff solid;  /* Removed border */
+      width: 180px;
+  }
+
+  d-title{
+    margin-top: 30px;
+  }
+
+  .index-title h1 {
+    font-family: 'Open Sans Condensed', Roboto, Helvetica, Arial, sans;
+    font-weight: 200;
+    font-size: 75px;
+    font-variant: small-caps;
+    text-align: center;
+    color: #ff5549;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+    border-bottom: 0; /*same as default h2*/
+    padding-bottom: 1rem; 
+  }
+
+  body {
+      background-color: white;
+    }
+  </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <link rel="stylesheet" href="styles.css" type="text/css"/>
+  <link rel="stylesheet" href="before-i-sleep.css" type="text/css"/>
 
 </head>
 
@@ -2611,12 +2767,14 @@ function init_posts_list() {
 <a href="posts/welcome/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":[]}</script>
 <div class="metadata">
-<div class="publishedDate">Oct. 8, 2021</div>
+<div class="publishedDate">Oct. 9, 2021</div>
 <div class="dt-authors">
 <div class="dt-author">CapitainData</div>
 </div>
 </div>
-<div class="thumbnail"></div>
+<div class="thumbnail">
+<img/>
+</div>
 <div class="description">
 <h2>Welcome to The Ultimate Learner</h2>
 <div class="dt-tags"></div>
@@ -2661,10 +2819,21 @@ reading what we have to say!</p>
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom"></div>
+<div class="appendix-bottom">
+<h3 id="updates-and-corrections">Corrections</h3>
+<p>If you see mistakes or want to suggest changes, please <a href="https://github.com/CapitainData/blog-experiment/issues/new">create an issue</a> on the source repository.</p>
+</div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
+<div class="distill-site-nav distill-site-footer">
+<div>
+
+
+CapitainData • 2021 •  <a href="https://capitaindata.github.io/blog-experiment/">The Ultimate Learner</a>
+</div>
+</div>
 <!--/radix_placeholder_navigation_after_body-->
+
 
 </body>
 
