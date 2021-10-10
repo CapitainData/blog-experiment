@@ -1,0 +1,18 @@
+---
+title: Documents
+output:
+  distill::distill_article:
+    toc: true
+creative_commons: CC BY-SA
+---
+
+
+Here you'll find documents covering things of interest to me or which I think will be interesting to those I engage with.  Most are solutions to exercises, demonstration of statistical concepts or programming, and may be geared towards beginners or more advanced.  I group them based the subject they are mostly linked to.
+
+## Mathematical Statistics
+
+<span itemscope itemtype ="http://schema.org/TechArticle">
+[<span itemprop="name keywords">Mathematical Statistics Exercises</span>](medias/mathematical_statistics/SatSolution.html)     
+<span itemprop="description">This shows 'by-hand' solutions to a bunch of exercises related to Mathematical Statistics Exercises and some Inferential experiments in Data Analyses.
+</span>
+</span>
