@@ -11,10 +11,37 @@ navbar:
     image: images/Max.png
     href: index.html
   right:
-    - text: "Home"
-      href: index.html
+    # - text: "Home"
+    #   href: index.html
     - text: "About"
       href: about.html
-    - icon: fa fa-rss
+    - text: "Documents"
+      href: documents.html
+    - text: "Workshops"
+      href: workshops.html
+    - text: "Code"
+      href: code.html
+    - text: "Odds/Ends"
+      href: misc.html
+    - text: "Projects"
+      href: projects.html
+    - text: "Resources"
+      href: resources.html
+    - icon: fab fa-github-alt fa-1x  
+      href: https://github.com/CapitainData
+    - icon: fa fa-rss fa-1x
       href: index.xml
-output: distill::distill_article
+    - icon: fab fa-twitter fa-1x
+      href: https://twitter.com/desire_dosseh
+  source_url: https://capitaindata.github.io/blog-experiment/
+google_analytics: "G-23VKK0QF3E"
+output: 
+  distill::distill_article:
+    css: before-i-sleep.css
+    anchor_sections: FALSE
+repository_url: https://github.com/CapitainData/blog-experiment
+collections:
+  posts:
+    creative_commons: CC BY-SA
+    disqus: the-ultimate-learner
+    share: [twitter, linkedin, facebook, google-plus, and pinterest]
