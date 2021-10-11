@@ -5,9 +5,13 @@ anchor_sections: FALSE
 
 
 <span itemscope itemtype="http://schema.org/Person">
+<figure>
+<img src="https://avatars.mds.yandex.net/i?id=e42210878d1b8fe0ac825c3e99d2ca4e-5341407-images-thumbs&n=13" alt="Star Trek Data, Captain Picard" style="display:block; margin: 0 auto; width: 40%">
+<figcation>
+<center>Source: <a href="https://www.pinterest.com/pin/278871401912165348/">pinterest</a></center>
+</figcation>
 
-<img src="https://avatars.mds.yandex.net/i?id=e42210878d1b8fe0ac825c3e99d2ca4e-5341407-images-thumbs&n=13" style="display:block; margin: 0 auto; width: 33%">
-
+</figure>
 
 ### What I do
 
@@ -53,7 +57,7 @@ Previously, I was a Data Analyst Intern for [APG](https://www.afripayway.com/) i
 
 <br>
 
-I am passionate about doing quality work that answers the questions at hand. What drew me to the world of data science and keeps my interest is that it frees me to engage in whatever science I like, and provides a great many tools with which to discover more about the things we humans are most interested in. CV can be found [here](medias/CV_AI_ENGLISH.pdf).
+I am passionate about doing quality work that answers the questions at hand. What drew me to the world of data science and keeps my interest is that it frees me to engage in whatever science I like, and provides a great many tools with which to discover more about the things we humans are most interested in. CV can be found [here](medias/CV_AI_ENGLISH.pdf). Feel free to reach me if you got any questions.
 
 <br>
 
