@@ -17,12 +17,12 @@ navbar:
       href: about.html
     - text: "Documents"
       href: documents.html
-    - text: "Workshops"
-      href: workshops.html
+    # - text: "Workshops"
+    #   href: workshops.html
     - text: "Code"
       href: code.html
-    - text: "Odds/Ends"
-      href: misc.html
+    # - text: "Odds/Ends"
+    #   href: misc.html
     - text: "Projects"
       href: projects.html
     - text: "Resources"
