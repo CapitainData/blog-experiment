@@ -27,6 +27,8 @@ navbar:
       href: projects.html
     - text: "Resources"
       href: resources.html
+    - text: "The Reader"
+      href: the_reader.html
     - icon: fab fa-github-alt fa-1x  
       href: https://github.com/CapitainData
     - icon: fa fa-rss fa-1x
