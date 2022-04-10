@@ -16,3 +16,20 @@ Here you'll find documents covering things of interest to me or which I think wi
 <span itemprop="description">This shows 'by-hand' solutions to a bunch of exercises related to Mathematical Statistics Exercises and some Inferential experiments in Data Analyses.
 </span>
 </span>
+
+## Experiment
+
+<span itemscope itemtype ="http://schema.org/TechArticle">
+[<span itemprop="name keywords">Programming language experiment in Rmarkdown</span>](Experience.html)     
+<span itemprop="description">This shows an experiment of compiling various languages in a Rmardown script (Python, C++).
+</span>
+</span>
+
+
+## ML OPTIMISATION
+
+<span itemscope itemtype ="http://schema.org/TechArticle">
+[<span itemprop="name keywords">MACHINE LEQRNING OPTIMISATION REVISION QUESTIONS</span>](medias/MLOPTIMISATION/TD1.html)     
+<span itemprop="description">This provides a proposition of answers to questions asked in a revision sheets at the end of Machine Learning Optimisation course in first year of a Msc. Program in Data Science at IMSP(Dangbo, Benin).
+</span>
+</span>

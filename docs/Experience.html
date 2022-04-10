@@ -86,28 +86,32 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>The Ultimate Learner: Projects</title>
+  <title>The Ultimate Learner: Experience</title>
 
 
   <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"/>
   <link rel="icon" type="image/vnd.microsoft.icon" href="images/max.ico"/>
 
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2021-01-14"/>
+  <meta property="article:created" itemprop="dateCreated" content="2021-01-14"/>
+  <meta name="article:author" content="Max"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="The Ultimate Learner: Projects"/>
+  <meta property="og:title" content="The Ultimate Learner: Experience"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="The Ultimate Learner"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="The Ultimate Learner: Projects"/>
+  <meta property="twitter:title" content="The Ultimate Learner: Experience"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output","creative_commons"]}},"value":[{"type":"character","attributes":{},"value":["Projects"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc"]}},"value":[{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["CC BY-SA"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date","output","creative_commons"]}},"value":[{"type":"character","attributes":{},"value":["Experience"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Max"]}]}]},{"type":"character","attributes":{},"value":["January 14, 2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc"]}},"value":[{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["CC BY-SA"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2588,7 +2592,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Projects","authors":[]}
+{"title":"Experience","authors":[{"author":"Max","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-01-14T00:00:00.000+01:00","citationText":"Max, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2630,16 +2634,69 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Projects</h1>
+<h1>Experience</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
 </div>
 
+<div class="d-byline">
+  
+  Max
+  
+<br/>January 14, 2021
+</div>
 
 <div class="d-article">
-<p>Here, you will find description of past projects I have worked on.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#c-code">C++ Code</a></li>
+<li><a href="#deployed">Deployed</a></li>
+<li><a href="#python-code">Python code</a></li>
+</ul>
+</nav>
+</div>
+<h2 id="c-code">C++ Code</h2>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb1"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;Rcpp.h&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">// [[Rcpp::export]]</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> fibonacci(<span class="at">const</span> <span class="dt">int</span> x) {</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (x == <span class="dv">0</span> || x == <span class="dv">1</span>) <span class="cf">return</span>(x);</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (fibonacci(x - <span class="dv">1</span>)) + fibonacci(x - <span class="dv">2</span>);</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+</div>
+<h2 id="deployed">Deployed</h2>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>fibonacci</span><span class='op'>(</span><span class='fl'>10L</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] 55</code></pre>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>fibonacci</span><span class='op'>(</span><span class='fl'>20L</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] 6765</code></pre>
+</div>
+<h2 id="python-code">Python code</h2>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/rstudio/reticulate'>reticulate</a></span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Example Python code:</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Hello, world!&quot;</span>)</span></code></pre></div>
+<pre><code>Hello, world!</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code></pre></div>
+<pre><code>2</code></pre>
+</div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

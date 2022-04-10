@@ -2,7 +2,7 @@
 title: "The Ultimate Learner"
 output:
   distill::distill_article:
-    self_contained: false
+    self_contained: FALSE
     anchor_sections: FALSE
 site: distill::distill_website
 css: [before-i-sleep.css]
